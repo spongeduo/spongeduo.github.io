@@ -3,21 +3,57 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | Hexo</title>
+  <title>KVC | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+  <meta name="description" content="KVC（Key Valuble Coding）
+基本概念
+是一种间接更改对象状态（或者说是属性值）的方式：key-value coding 简称KVC.
+主要本质特点是采用字符串来标识对象的属性变量，并可以利用这个标识来更改对象的状态（或者说是属性值）
+
+
+基本用法
+
+
+(id)valueForKey:(NSString *)key //以key作为标识符，获取其对应的属性值
+
+
+
+(void)s">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2015/10/10/hello-world/index.html">
+<meta property="og:title" content="KVC">
+<meta property="og:url" content="http://yoursite.com/2015/03/02/KVC副本/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2015-10-10T09:53:29.000Z">
+<meta property="og:description" content="KVC（Key Valuble Coding）
+基本概念
+是一种间接更改对象状态（或者说是属性值）的方式：key-value coding 简称KVC.
+主要本质特点是采用字符串来标识对象的属性变量，并可以利用这个标识来更改对象的状态（或者说是属性值）
+
+
+基本用法
+
+
+(id)valueForKey:(NSString *)key //以key作为标识符，获取其对应的属性值
+
+
+
+(void)s">
+<meta property="og:updated_time" content="2015-04-30T13:31:42.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="KVC">
+<meta name="twitter:description" content="KVC（Key Valuble Coding）
+基本概念
+是一种间接更改对象状态（或者说是属性值）的方式：key-value coding 简称KVC.
+主要本质特点是采用字符串来标识对象的属性变量，并可以利用这个标识来更改对象的状态（或者说是属性值）
+
+
+基本用法
+
+
+(id)valueForKey:(NSString *)key //以key作为标识符，获取其对应的属性值
+
+
+
+(void)s">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -63,10 +99,10 @@ Quick">
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-KVC副本" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/10/10/hello-world/" class="article-date">
-  <time datetime="2015-10-10T09:53:29.000Z" itemprop="datePublished">2015-10-10</time>
+    <a href="/2015/03/02/KVC副本/" class="article-date">
+  <time datetime="2015-03-02T13:31:21.000Z" itemprop="datePublished">2015-03-02</time>
 </a>
     
   </div>
@@ -77,7 +113,7 @@ Quick">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      KVC
     </h1>
   
 
@@ -85,20 +121,43 @@ Quick">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h2 id="KVC（Key_Valuble_Coding）">KVC（Key Valuble Coding）</h2><ol>
+<li>基本概念<ul>
+<li>是一种间接更改对象状态（或者说是属性值）的方式：key-value coding 简称KVC.</li>
+<li>主要本质特点是采用字符串来标识对象的属性变量，并可以利用这个标识来更改对象的状态（或者说是属性值）</li>
+</ul>
+</li>
+<li><p>基本用法</p>
+<ul>
+<li><ul>
+<li>(id)valueForKey:(NSString *)key //以key作为标识符，获取其对应的属性值</li>
+</ul>
+</li>
+<li><ul>
+<li>(void)setValue:(id)value forKey:(NSString *)key //以key作为标识符设置其对应的属性值。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>调用机制</p>
+<ul>
+<li>valueForKey:会首先查找以参数名命名（格式为-key或者isKey)的getter方法，如果找到的话则调用这个方法；如果没有找到这样的getter方法，它将会在对象内部寻找名称格式为_key或者key的实例变量，然后返回。</li>
+<li>setValue:forKey:的机制跟valueForKey相似。它首先查找参数名命名的setter方法，如果找到的话则完成设置；如果没有找到setter方法， 则直接在类中找到名称格式为_key或者key的实例变量， 然后将value赋值给它。</li>
+</ul>
+</li>
+<li><p>键路径</p>
+<p>键路径的概念和表示：可以在对象和不同的变量名称之间用圆点分开来表示。</p>
+<ul>
+<li>-(id)valueForKeyPath:(NSString *)keyPath //以keyPath作为标识符，获取其对应的属性值</li>
+<li>-(void)setValue:(id)value forKeyPath:(NSString *)keyPath //以keyPath为标识符，设置其对应的属性的值。</li>
+</ul>
+</li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/10/10/hello-world/" data-id="cifl1a9jc000ifgmn2tjxzorp" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/03/02/KVC副本/" data-id="cifl1a9hd0000fgmnh2ih2c29" class="article-share-link">Share</a>
       
       
     </footer>
@@ -107,19 +166,19 @@ Quick">
     
 <nav id="article-nav">
   
-    <a href="/2015/10/10/hello-world副本/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2015/03/14/kvc误点副本/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          Hello World
+          KVC误点
         
       </div>
     </a>
   
   
-    <a href="/2015/05/11/日期与时间常用方法副本/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2015/01/14/nil与null副本/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">日期与时间常用方法</div>
+      <div class="article-nav-title">nil与NUll</div>
     </a>
   
 </nav>
